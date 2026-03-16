@@ -3,9 +3,13 @@ public class Ship {
     private int yearBuilt;
 
     public Ship() {
+        name = "";
+        yearBuilt = 0;
     }
 
     public Ship(String name, int yearBuilt) {
+        this.name = name;
+        this.yearBuilt = yearBuilt;
     }
 
     public String getName() {
@@ -25,6 +29,6 @@ public class Ship {
     }
 
     public String toString() {
-        return "";
+        return "Ship Name: " + name + ", Year Built: " + yearBuilt;
     }
 }
