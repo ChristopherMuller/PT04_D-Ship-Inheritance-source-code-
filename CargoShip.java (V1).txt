@@ -1,0 +1,26 @@
+public class CargoShip extends Ship {
+    private int cargoCapacity;
+    private static int numCargoShips;
+
+    public CargoShip() {
+    }
+
+    public CargoShip(String name, int yearBuilt, int cargoCapacity) {
+    }
+
+    public int getCargoCapacity() {
+        return cargoCapacity;
+    }
+
+    public void setCargoCapacity(int cargoCapacity) {
+        this.cargoCapacity = cargoCapacity;
+    }
+
+    public static int getNumCargoShips() {
+        return numCargoShips;
+    }
+
+    public String toString() {
+        return "";
+    }
+}
