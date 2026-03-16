@@ -1,11 +1,16 @@
 public class CargoShip extends Ship {
     private int cargoCapacity;
-    private static int numCargoShips;
+    private static int numCargoShips = 0;
 
     public CargoShip() {
+        super();
+        numCargoShips++;
     }
 
     public CargoShip(String name, int yearBuilt, int cargoCapacity) {
+        super(name, yearBuilt);
+        setCargoCapacity(cargoCapacity);
+        numCargoShips++;
     }
 
     public int getCargoCapacity() {
@@ -21,6 +26,6 @@ public class CargoShip extends Ship {
     }
 
     public String toString() {
-        return "";
+        return "Cargo ship: " + getName() + ", Capacity: " + cargoCapacity + " tons";
     }
 }
