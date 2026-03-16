@@ -1,11 +1,16 @@
 public class CruiseShip extends Ship {
     private int maxPassengers;
-    private static int numCruiseShips;
+    private static int numCruiseShips = 0;
 
     public CruiseShip() {
+        super();
+        numCruiseShips++;
     }
 
     public CruiseShip(String name, int yearBuilt, int passengers) {
+        super(name, yearBuilt);
+        setPassengers(passengers);
+        numCruiseShips++;
     }
 
     public int getPassengers() {
@@ -21,6 +26,6 @@ public class CruiseShip extends Ship {
     }
 
     public String toString() {
-        return "";
+        return "Cruise ship: " + getName() + ", Passengers: " + maxPassengers;
     }
 }
